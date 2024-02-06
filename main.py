@@ -35,14 +35,14 @@ def get_url_page():
     for i in range(1, 6):
         sleep(0.1)
         print(f"-> AliExpress Scrapper : {bc.WARNING}Waiting ...{bc.DEFAULT}")
-    scroll_heigh = 88
-    scroll_inc = 180 #change this increment arg to scrap more data !
+    scroll_heigh = 150
+    scroll_inc = 350 #change this increment arg to scrap more data !
     for _ in range(scroll_inc):
         driver.execute_script(f"window.scrollBy(0, {scroll_heigh});")
-        sleep(0.4)
+        sleep(0.6)
         print(f"-> AliExpress Scrapper : {bc.WARNING}Waiting ...{bc.DEFAULT}")
         try:
-            more_to_love_button = WebDriverWait(driver, 0.1).until(
+            more_to_love_button = WebDriverWait(driver, 0.4).until(
                 EC.element_to_be_clickable((By.CLASS_NAME, 'more-to-love--action--2gSTocC'))
             )
             more_to_love_button.click()
