@@ -1,4 +1,5 @@
 # AliExpress Scrapper
+**For a fully automated and large-scale scraping, consider using [Bright Data's Scraper APIs](https://brightdata.com/products/web-scraper)**
 
 ## Overview
 
@@ -41,5 +42,3 @@ python aliexpress_scrapper.py
 ### Disclaimer
 This script is for educational purposes only. Use it responsibly and adhere to AliExpress's terms of service.
 
-### Tools
-you can use Bright Data's APIs and link [brightdata](https://brightdata.com/)
